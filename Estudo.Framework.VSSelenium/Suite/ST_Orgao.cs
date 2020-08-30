@@ -19,28 +19,27 @@ namespace Estudo.Framework.VSSelenium.Suite
     public class ST_Orgao : SuiteBase
     {
 
-        [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Massa\\Dados.xml", "Orgao", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Massa\\Dados.xml", "Categoria", DataAccessMethod.Sequential), TestMethod]
         [TestCategory("Orgao")]
-        public void CT_FB_CRUD_Orgao()
+        public void CT_PesquisarCategoria_Feminina()
         {
 
 
             try
             {
 
-                PageObjects.LoginPO chamadaLogar = new PageObjects.LoginPO();
-                PageObjects.MenuPO chamadaMenu = new PageObjects.MenuPO();
+                //PageObjects.LoginPO chamadaLogar = new PageObjects.LoginPO();
+                //PageObjects.MenuPO chamadaMenu = new PageObjects.MenuPO();
 
 
-                //chamadaLogar.VerificaSiteNaoSeguro();
+                ////chamadaLogar.VerificaSiteNaoSeguro();
 
-                chamadaLogar.Login_SSO();
-                chamadaLogar.Login_Simula();
+                //chamadaLogar.Login_SSO();
+                //chamadaLogar.Login_Simula();
 
 
 
-                chamadaLogar.SairSistema();
+                //chamadaLogar.SairSistema();
 
 
 

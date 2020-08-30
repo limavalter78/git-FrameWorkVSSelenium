@@ -16,31 +16,21 @@ using System.Threading;
 namespace Estudo.Framework.VSSelenium.Suite
 {
     [TestClass]
-    public class ST_Finalidade : SuiteBase
+    public class ST_AutomationPractice : SuiteBase
     {
 
-
-        [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Massa\\Dados.xml", "Finalidade", DataAccessMethod.Sequential)]
-        [TestCategory("Finalidade")]
-        public void CT_FB_CRUD_Finalidade()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\Massa\\Dados.xml", "Categoria", DataAccessMethod.Sequential), TestMethod]
+        [TestCategory("Women")]
+        public void CT_PesquisarCategoria_Feminina()
         {
-
 
             try
             {
 
-                PageObjects.LoginPO chamadaLogar = new PageObjects.LoginPO();
-                PageObjects.MenuPO chamadaMenu = new PageObjects.MenuPO();
+                PageObjects.WomenPO searchProduct = new PageObjects.WomenPO();
 
 
-                chamadaLogar.VerificaSiteNaoSeguro();
-                chamadaLogar.Login_SSO();
-                chamadaLogar.Login_Simula();
-
-
-
-                chamadaLogar.SairSistema();
+                searchProduct.PesquisarProduto();
 
 
 
@@ -58,6 +48,7 @@ namespace Estudo.Framework.VSSelenium.Suite
 
         }
 
+     
 
     }
 }

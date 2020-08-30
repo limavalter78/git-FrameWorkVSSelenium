@@ -83,10 +83,11 @@
     <Compile Include="PageObjects\MenuPO.cs" />
     <Compile Include="PageObjects\OrgaoPO.cs" />
     <Compile Include="PageObjects\PageObjectBase.cs" />
+    <Compile Include="PageObjects\WomenPO.cs" />
     <Compile Include="ScreenShot\ScreenshotCustom.cs" />
     <Compile Include="ScreenShot\ScreenShotFields.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Suite\ST_Finalidade.cs" />
+    <Compile Include="Suite\ST_AutomationPractice.cs" />
     <Compile Include="Suite\ST_Orgao.cs" />
     <Compile Include="Suite\SuiteBase.cs" />
     <Compile Include="Utils\Decrypt.cs" />
