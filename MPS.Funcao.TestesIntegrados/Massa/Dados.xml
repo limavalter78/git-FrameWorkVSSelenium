@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TestData_GerenciamentoFuncao>
+
+  <Orgao>
+    <Browser>Chrome</Browser>
+    <Url_Test>https://dev.tjsp.jus.br/RHM/Designacao/</Url_Test>
+    <UsuarioSSO>sso</UsuarioSSO>
+    <SenhaSSO>123@456</SenhaSSO>
+    <UsuarioADM>svc_teste_apprh</UsuarioADM>
+    <SenhaADM>5eNh@f0Rte%</SenhaADM>
+    <Matricula>355474</Matricula>
+    <NomeTeste>_CHROME</NomeTeste>
+    
+    <TipoOrgao></TipoOrgao>
+    
+    
+    
+  </Orgao>
+
+  <Finalidade>
+    <Browser>CHROME</Browser>
+    <Url_Test>https://dev.tjsp.jus.br/RHM/Designacao/</Url_Test>
+    <UsuarioSSO>sso</UsuarioSSO>
+    <SenhaSSO>123@456</SenhaSSO>
+    <UsuarioADM>svc_teste_apprh</UsuarioADM>
+    <SenhaADM>5eNh@f0Rte%</SenhaADM>
+    <Matricula>355474</Matricula>
+
+    <NomeTeste>_CHROME</NomeTeste>
+
+
+  </Finalidade>
+  
+</TestData_GerenciamentoFuncao>
+  
+  
+

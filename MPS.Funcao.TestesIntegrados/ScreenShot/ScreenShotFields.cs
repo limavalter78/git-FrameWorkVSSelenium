@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MPS.Funcao.TestesIntegrados.ScreenShot
+{
+    public class ScreenShotFields
+    {
+        public static string TestName { get; set; }
+
+        public static string Token { get; set; }
+    }
+}
