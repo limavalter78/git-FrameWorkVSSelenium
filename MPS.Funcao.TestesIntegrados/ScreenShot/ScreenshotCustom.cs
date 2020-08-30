@@ -1,4 +1,4 @@
-﻿using MPS.Funcao.TestesIntegrados.Utils;
+﻿using Estudo.Framework.VSSelenium.Utils;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MPS.Funcao.TestesIntegrados.ScreenShot
+namespace Estudo.Framework.VSSelenium.ScreenShot
 {
     public class ScreenshotCustom
     {
@@ -26,7 +26,7 @@ namespace MPS.Funcao.TestesIntegrados.ScreenShot
             get
             {
                 if (_WebDriver is null)
-                    _WebDriver = WebDriverFactory.WebDriverFactoryMps.GetDriver();
+                    _WebDriver = WebDriverFactory.WebDriverFactoryVS.GetDriver();
 
                 return _WebDriver;
             }

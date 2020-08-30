@@ -10,11 +10,11 @@ using OpenQA.Selenium.Support.UI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Runtime.InteropServices;
-using MPS.Funcao.TestesIntegrados.Wrapper;
-using MPS.Funcao.TestesIntegrados.ScreenShot;
+using Estudo.Framework.VSSelenium.Wrapper;
+using Estudo.Framework.VSSelenium.ScreenShot;
 
 
-namespace MPS.Funcao.TestesIntegrados.PageObjects
+namespace Estudo.Framework.VSSelenium.PageObjects
 {
     [TestClass]
     public class LoginPO : PageObjects.PageObjectsBase

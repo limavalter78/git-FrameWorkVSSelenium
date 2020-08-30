@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MPS.Funcao.TestesIntegrados.Utils
+namespace Estudo.Framework.VSSelenium.Utils
 {
     public class Decrypt
     {

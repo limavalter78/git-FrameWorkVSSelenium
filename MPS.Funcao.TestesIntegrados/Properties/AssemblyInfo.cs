@@ -2,11 +2,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("MPS.Funcao.TestesIntegrados")]
+[assembly: AssemblyTitle("Estudo.Framework.VSSelenium")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MPS.Funcao.TestesIntegrados")]
+[assembly: AssemblyProduct("Estudo.Framework.VSSelenium")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

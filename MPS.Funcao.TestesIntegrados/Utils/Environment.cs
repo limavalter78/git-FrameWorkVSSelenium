@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MPS.Funcao.TestesIntegrados.Suite;
+using Estudo.Framework.VSSelenium.Suite;
 
-namespace MPS.Funcao.TestesIntegrados.Utils
+namespace Estudo.Framework.VSSelenium.Utils
 {
  
-    public class EnvironmentMps : SuiteBase
+    public class Environment : SuiteBase
     {
         public static string Ambiente;
 

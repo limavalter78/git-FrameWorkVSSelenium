@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MPS.Funcao.TestesIntegrados.ScreenShot;
-using MPS.Funcao.TestesIntegrados.Utils;
-using MPS.Funcao.TestesIntegrados.WebDriverFactory;
+using Estudo.Framework.VSSelenium.ScreenShot;
+using Estudo.Framework.VSSelenium.Utils;
+using Estudo.Framework.VSSelenium.WebDriverFactory;
 using System.IO;
 using System.Diagnostics;
 
-namespace MPS.Funcao.TestesIntegrados.Suite
+namespace Estudo.Framework.VSSelenium.Suite
 {
     //Herdar esta classe em todos Suites
     public abstract class SuiteBase
@@ -47,7 +47,7 @@ namespace MPS.Funcao.TestesIntegrados.Suite
             ScreenShotFields.Token = DateTime.Now.ToLongTimeString().Replace(":", "");
             ScreenShotFields.TestName = TestContext.TestName;
             var a = testContextInstance.Properties;
-            WebDriverFactoryMps.AbrirNavegador(EnvironmentMps.RetornarUrl());
+            WebDriverFactoryVS.AbrirNavegador(Utils.Environment.RetornarUrl());
         }
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,7 +57,7 @@ namespace MPS.Funcao.TestesIntegrados.Suite
         //public virtual void TesteInit()
         //{
         //    //Armazena o nome do teste e token para o screenshot
-        //    WebDriverFactoryMps.AbrirNavegador(EnvironmentMps.RetornarUrl());
+        //    WebDriverFactoryVS.AbrirNavegador(Environment.RetornarUrl());
         //    var browser = WebDriverFactory.GetDriver();
         //    Evidencia.Iniciar(browser);
         //    Evidencia.ParametrizaEvidencia("Pré-condições de teste", "0", nomeArquivo: TestContext.TestName, diretorio: TestContext.FullyQualifiedTestClassName);
@@ -87,7 +87,7 @@ namespace MPS.Funcao.TestesIntegrados.Suite
 
 
             }
-            WebDriverFactory.WebDriverFactoryMps.Close();
+            WebDriverFactory.WebDriverFactoryVS.Close();
 
             string folder = Util.caminhoDiretório;
             string ambiente = Util.Ambiente;

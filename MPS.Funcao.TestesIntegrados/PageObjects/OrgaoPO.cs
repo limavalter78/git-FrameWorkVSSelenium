@@ -10,9 +10,9 @@ using OpenQA.Selenium.Support.UI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Runtime.InteropServices;
-using MPS.Funcao.TestesIntegrados.Wrapper;
-using MPS.Funcao.TestesIntegrados.ScreenShot;
-namespace MPS.Funcao.TestesIntegrados.PageObjects
+using Estudo.Framework.VSSelenium.Wrapper;
+using Estudo.Framework.VSSelenium.ScreenShot;
+namespace Estudo.Framework.VSSelenium.PageObjects
 {
     [TestClass]
     public class OrgaoPO : PageObjects.PageObjectsBase

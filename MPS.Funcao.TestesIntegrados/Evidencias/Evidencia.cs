@@ -1,9 +1,9 @@
-﻿using MPS.Funcao.TestesIntegrados.Evidencias;
+﻿using Estudo.Framework.VSSelenium.Evidencias;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 
-namespace MPS.Funcao.TestesIntegrados.Evidencias
+namespace Estudo.Framework.VSSelenium.Evidencias
 {
     public static class Evidencia
     {

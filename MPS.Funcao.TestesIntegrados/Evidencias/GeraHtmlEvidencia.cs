@@ -2,17 +2,17 @@
 using System.Linq;
 using System.Text;
 using System.IO;
-using MPS.Funcao.TestesIntegrados.Utils;
-using MPS.Funcao.TestesIntegrados.Evidencias;
+using Estudo.Framework.VSSelenium.Utils;
+using Estudo.Framework.VSSelenium.Evidencias;
 
-namespace MPS.Funcao.TestesIntegrados.Evidencias
+namespace Estudo.Framework.VSSelenium.Evidencias
 {
     public static class GeraHtmlEvidencia
     {
 
         public static void GeraHtml(string NomeCenarioTeste, string idTFS, string nomeArquivo, TipoEvidencias tipoEvidencia, LogEvidencias evidencia, string folderTest = "")
         {
-            string caminhoRaiz = EnvironmentMps.DiretorioEvidencia();
+            string caminhoRaiz = Utils.Environment.DiretorioEvidencia();
 
             if (!string.IsNullOrWhiteSpace(folderTest))
             {
@@ -21,8 +21,8 @@ namespace MPS.Funcao.TestesIntegrados.Evidencias
             }
 
             string fileReport = caminhoRaiz + "\\" + idTFS + "_" + nomeArquivo + "_" + DateTime.Now.Ticks + ".html";
-            string NomeEquipe = Utils.EnvironmentMps.RetornarEquipe();
-            string NomeProjeto = Utils.EnvironmentMps.RetornarProjeto();
+            string NomeEquipe = Utils.Environment.RetornarEquipe();
+            string NomeProjeto = Utils.Environment.RetornarProjeto();
 
             //PrintWriter writer = new PrintWriter(fileReport, "iso-8859-1");
             using (var streamWriter = new StreamWriter(new FileStream(fileReport, FileMode.CreateNew, FileAccess.Write), Encoding.UTF8))

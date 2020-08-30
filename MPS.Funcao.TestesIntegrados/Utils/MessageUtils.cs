@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MPS.Funcao.TestesIntegrados.Evidencias;
-using MPS.Funcao.TestesIntegrados.Extensoes;
+using Estudo.Framework.VSSelenium.Evidencias;
+using Estudo.Framework.VSSelenium.Extensoes;
 using OpenQA.Selenium;
 
-namespace MPS.Funcao.TestesIntegrados.Utils
+namespace Estudo.Framework.VSSelenium.Utils
 {
     public class MessageUtils
     {

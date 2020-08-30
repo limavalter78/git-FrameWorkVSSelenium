@@ -1,4 +1,4 @@
-﻿using MPS.Funcao.TestesIntegrados.Evidencias;
+﻿using Estudo.Framework.VSSelenium.Evidencias;
 using OpenQA.Selenium;
 
 namespace TestesIntegrados.Extensoes

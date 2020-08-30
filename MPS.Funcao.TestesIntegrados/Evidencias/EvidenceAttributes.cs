@@ -1,14 +1,15 @@
-﻿using MPS.Funcao.TestesIntegrados.WebDriverFactory;
+﻿
+using Estudo.Framework.VSSelenium.WebDriverFactory;
 using System;
 
-namespace MPS.Funcao.TestesIntegrados.Evidencias
+namespace Estudo.Framework.VSSelenium.Evidencias
 {
     public class InitEvidenceAttribute : Attribute
     {
         public InitEvidenceAttribute()
         {
             //IWebDriver driver = Activator.CreateInstance(type: webDriver) as IWebDriver;
-            Evidencia.Iniciar(WebDriverFactoryMps.GetDriver());
+            Evidencia.Iniciar(WebDriverFactoryVS.GetDriver());
         }
     }
 

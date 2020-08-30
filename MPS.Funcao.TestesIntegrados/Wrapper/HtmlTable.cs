@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MPS.Funcao.TestesIntegrados.Wrapper
+namespace Estudo.Framework.VSSelenium.Wrapper
 {
     public class HtmlTable : HtmlControl
     {

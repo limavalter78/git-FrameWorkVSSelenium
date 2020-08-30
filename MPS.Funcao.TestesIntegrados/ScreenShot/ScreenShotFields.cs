@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MPS.Funcao.TestesIntegrados.ScreenShot
+namespace Estudo.Framework.VSSelenium.ScreenShot
 {
     public class ScreenShotFields
     {

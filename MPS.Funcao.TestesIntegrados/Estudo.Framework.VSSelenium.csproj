@@ -89,15 +89,14 @@
     <Compile Include="Suite\ST_Finalidade.cs" />
     <Compile Include="Suite\ST_Orgao.cs" />
     <Compile Include="Suite\SuiteBase.cs" />
-    <Compile Include="Utils\DadosLogin.cs" />
     <Compile Include="Utils\Decrypt.cs" />
-    <Compile Include="Utils\EnvironmentMps.cs" />
+    <Compile Include="Utils\Environment.cs" />
     <Compile Include="Utils\MenuUtils.cs" />
     <Compile Include="Utils\MessageUtils.cs" />
     <Compile Include="Utils\PDF.cs" />
     <Compile Include="Utils\Util.cs" />
     <Compile Include="Utils\WaitUtils.cs" />
-    <Compile Include="WebDriverFactory\WebDriverFactoryMps.cs" />
+    <Compile Include="WebDriverFactory\WebDriverFactoryVS.cs" />
     <Compile Include="Wrapper\HtmlControl.cs" />
     <Compile Include="Wrapper\HtmlTable.cs" />
     <Compile Include="Wrapper\IWebElementCustom.cs" />

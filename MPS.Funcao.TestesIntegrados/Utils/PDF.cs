@@ -1,11 +1,11 @@
-﻿using MPS.Funcao.TestesIntegrados.ScreenShot;
+﻿using Estudo.Framework.VSSelenium.ScreenShot;
 using PdfSharp.Drawing;
 using PdfSharp.Drawing.Layout;
 using PdfSharp.Pdf;
 using System;
 using System.IO;
 
-namespace MPS.Funcao.TestesIntegrados.Utils
+namespace Estudo.Framework.VSSelenium.Utils
 {
 
     public class PDF : IDisposable
@@ -90,11 +90,7 @@ namespace MPS.Funcao.TestesIntegrados.Utils
             }
 
 
-            //Inclui o Logo Tipo do TJ
-            //string startupPath = System.IO.Directory.GetParent(@"../../").FullName;// AppDomain.CurrentDomain.BaseDirectory;// Environment.CurrentDirectory;
-            //Debug.Print("EdyTest->" + startupPath);
-            //var arqLogoTipoTj = @"C:\Users\" + Environment.UserName + @"\source\repos\HolosTesteIntegrado\MPS.HOLOS.TestesIntegrados.CrossBrowser\Massa\Img\LogoTJ.png";
-            //var arqLogoTipoTj = @"C:\Imagens\LogoTJ.png";
+            //Inclui o Logo sobre o relatório
             var arqLogoTipoTj = @"C:\Arquivos\Imagens\LogoTJ.png";
 
             if (File.Exists(arqLogoTipoTj))
@@ -104,12 +100,11 @@ namespace MPS.Funcao.TestesIntegrados.Utils
 
             }
 
-            //Inclui o LogoTipo da Mps
-            //var arqLogoTipoMps = @"C:\Users\" + Environment.UserName + @"\source\repos\HolosTesteIntegrado\MPS.HOLOS.TestesIntegrados.CrossBrowser\Massa\Img\logo-mps-small.png";
-            var arqLogoTipoMps = @"C:\Arquivos\Imagens\logo-mps-small.png";
-            if (File.Exists(arqLogoTipoMps))
+            //Inclui sobre o relatório
+            var arqLogoTipo = @"C:\Arquivos\Imagens\logo-mps-small.png";
+            if (File.Exists(arqLogoTipo))
             {
-                gfx.DrawImage(XImage.FromFile(arqLogoTipoMps), page.Width - 450, 10, 400, 48);
+                gfx.DrawImage(XImage.FromFile(arqLogoTipo), page.Width - 450, 10, 400, 48);
             }
 
             //Inclui o Cabeçalho

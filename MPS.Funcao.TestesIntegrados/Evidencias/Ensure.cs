@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MPS.Funcao.TestesIntegrados.Evidencias
+namespace Estudo.Framework.VSSelenium.Evidencias
 {
     public static class Ensure
     {

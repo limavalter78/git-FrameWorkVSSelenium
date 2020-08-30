@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MPS.Funcao.TestesIntegrados.ScreenShot;
+using Estudo.Framework.VSSelenium.ScreenShot;
 using System.Threading;
 
-namespace MPS.Funcao.TestesIntegrados.Wrapper
+namespace Estudo.Framework.VSSelenium.Wrapper
 {
     public static class IWebElementCustom
     {

@@ -1,20 +1,20 @@
-﻿using MPS.Funcao.TestesIntegrados.Evidencias;
-using MPS.Funcao.TestesIntegrados.WebDriverFactory;
+﻿using Estudo.Framework.VSSelenium.Evidencias;
+using Estudo.Framework.VSSelenium.WebDriverFactory;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using MPS.Funcao.TestesIntegrados.Utils;
+using Estudo.Framework.VSSelenium.Utils;
 
-namespace MPS.Funcao.TestesIntegrados.Extensoes
+namespace Estudo.Framework.VSSelenium.Extensoes
 {
     public static class IWebElementExtensions
     {
         private static IWebDriver GetDriver(IWebElement webElement = null)
         {
-            IWebDriver driver = (webElement as IWrapsDriver)?.WrappedDriver ?? WebDriverFactoryMps.GetDriver();
+            IWebDriver driver = (webElement as IWrapsDriver)?.WrappedDriver ?? WebDriverFactoryVS.GetDriver();
             return driver;
         }
 
@@ -127,7 +127,7 @@ namespace MPS.Funcao.TestesIntegrados.Extensoes
 
         public static void SetHighLight(this IWebElement webElement, string color = "blue")
         {
-            IWebDriver driver = (webElement as IWrapsDriver)?.WrappedDriver ?? WebDriverFactoryMps.GetDriver();
+            IWebDriver driver = (webElement as IWrapsDriver)?.WrappedDriver ?? WebDriverFactoryVS.GetDriver();
             SetHighLight(webElement, driver, color);
         }
 

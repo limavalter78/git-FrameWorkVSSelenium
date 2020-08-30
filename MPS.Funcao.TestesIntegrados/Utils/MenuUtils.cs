@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Internal;
-using MPS.Funcao.TestesIntegrados.Extensoes;
-using MPS.Funcao.TestesIntegrados.WebDriverFactory;
+using Estudo.Framework.VSSelenium.Extensoes;
+using Estudo.Framework.VSSelenium.WebDriverFactory;
 using System.Threading;
-using MPS.Funcao.TestesIntegrados.Evidencias;
+using Estudo.Framework.VSSelenium.Evidencias;
 
-namespace MPS.Funcao.TestesIntegrados.Utils
+namespace Estudo.Framework.VSSelenium.Utils
 {
     public class MenuUtils
     {
@@ -24,7 +24,7 @@ namespace MPS.Funcao.TestesIntegrados.Utils
         public MenuUtils(IWebElement element)
         {
             this.element = element;
-            this.driver = WebDriverFactoryMps.GetDriver();
+            this.driver = WebDriverFactoryVS.GetDriver();
         }
 
         public void NavegaMenu(String caminho)

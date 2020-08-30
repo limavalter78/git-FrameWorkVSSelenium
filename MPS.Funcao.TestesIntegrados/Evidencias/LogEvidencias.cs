@@ -1,9 +1,9 @@
-﻿using MPS.Funcao.TestesIntegrados.Extensoes;
+﻿using Estudo.Framework.VSSelenium.Extensoes;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 
-namespace MPS.Funcao.TestesIntegrados.Evidencias
+namespace Estudo.Framework.VSSelenium.Evidencias
 {
 	public enum TipoEvidencias
     {

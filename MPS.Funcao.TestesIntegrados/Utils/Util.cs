@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MPS.Funcao.TestesIntegrados.Wrapper;
+using Estudo.Framework.VSSelenium.Wrapper;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Support.UI;
 using System.Threading;
-using MPS.Funcao.TestesIntegrados.ScreenShot;
+using Estudo.Framework.VSSelenium.ScreenShot;
 using PdfSharp.Pdf;
 using PdfSharp.Drawing;
 using System.IO;
@@ -17,7 +17,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using OpenQA.Selenium.Interactions;
 
-namespace MPS.Funcao.TestesIntegrados.Utils
+namespace Estudo.Framework.VSSelenium.Utils
 {
     public static class Util
     {

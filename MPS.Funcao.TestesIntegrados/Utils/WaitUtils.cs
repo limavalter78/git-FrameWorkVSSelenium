@@ -1,4 +1,4 @@
-﻿using MPS.Funcao.TestesIntegrados.WebDriverFactory;
+﻿using Estudo.Framework.VSSelenium.WebDriverFactory;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -7,17 +7,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MPS.Funcao.TestesIntegrados.Wrapper;
+using Estudo.Framework.VSSelenium.Wrapper;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MPS.Funcao.TestesIntegrados.Utils
+namespace Estudo.Framework.VSSelenium.Utils
 {
     public static class WaitUtils
     {
 
         public static void WaitUntilElementToBeClickable(IWebElement element)
         {
-            IWebDriver driver = WebDriverFactoryMps.GetDriver();
+            IWebDriver driver = WebDriverFactoryVS.GetDriver();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(120));
 
             //wait.IgnoreExceptionTypes(typeof(Exception));
@@ -31,7 +31,7 @@ namespace MPS.Funcao.TestesIntegrados.Utils
 
         public static void WaitUntilInvisibilityOfElementLocated(IWebElement element)
         {
-            IWebDriver driver = WebDriverFactoryMps.GetDriver();
+            IWebDriver driver = WebDriverFactoryVS.GetDriver();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(120));
             wait.IgnoreExceptionTypes(typeof(Exception));
 

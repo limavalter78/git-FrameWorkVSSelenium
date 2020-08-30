@@ -10,9 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
-namespace MPS.Funcao.TestesIntegrados.WebDriverFactory
+namespace Estudo.Framework.VSSelenium.WebDriverFactory
 {
-    public static class WebDriverFactoryMps
+    public static class WebDriverFactoryVS
     {
         #region :: Declarações 
 
@@ -98,7 +98,7 @@ namespace MPS.Funcao.TestesIntegrados.WebDriverFactory
             if (webDriver != null)
                 return webDriver;
 
-            switch (Utils.EnvironmentMps.RetornarBrowser().ToLower())
+            switch (Utils.Environment.RetornarBrowser().ToLower())
             {
            
                 case "chrome":

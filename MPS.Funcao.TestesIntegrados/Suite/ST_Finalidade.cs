@@ -13,7 +13,7 @@ using System.IO;
 using Microsoft.VisualStudio.TestTools.UITesting;
 using System.Threading;
 
-namespace MPS.Funcao.TestesIntegrados.Suite
+namespace Estudo.Framework.VSSelenium.Suite
 {
     [TestClass]
     public class ST_Finalidade : SuiteBase

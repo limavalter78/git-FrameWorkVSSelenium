@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using MPS.Funcao.TestesIntegrados.Utils;
+using Estudo.Framework.VSSelenium.Utils;
 
-namespace MPS.Funcao.TestesIntegrados.PageObjects
+namespace Estudo.Framework.VSSelenium.PageObjects
 {
     //Herdar esta classe em todos PageObjects 
     public abstract class PageObjectsBase
@@ -29,7 +29,7 @@ namespace MPS.Funcao.TestesIntegrados.PageObjects
             get
             {
                 if (_WebDriver is null)
-                    _WebDriver = WebDriverFactory.WebDriverFactoryMps.GetDriver();
+                    _WebDriver = WebDriverFactory.WebDriverFactoryVS.GetDriver();
 
                 return _WebDriver;
             }
